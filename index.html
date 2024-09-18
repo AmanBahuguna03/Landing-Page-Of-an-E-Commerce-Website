@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple eCommerce Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1>Nike Jordan Air</h1>
+        <p><strong> Perfect Product For Your Needs</strong></p>
+      </div>
+    </header>
+
+    <!-- Main Product Section -->
+    <section class="product">
+      <div class="container">
+        <div class="product-images">
+          <img src="product image.jpg" alt="Product Image" id="main-image" />
+          <div class="product-thumbnails">
+            <img
+              class="image"
+              src="thumb1.jpg"
+              alt="Thumbnail 1"
+              onclick="changeImage('thumb1.jpg')"
+            />
+            <img
+              class="image"
+              src="thumb2.webp"
+              alt="Thumbnail 2"
+              onclick="changeImage('thumb2.webp')"
+            />
+            <img
+              class="image"
+              src="thumbnail3.jpg"
+              alt="Thumbnail 3"
+              onclick="changeImage('thumbnail3.jpg')"
+            />
+          </div>
+        </div>
+        <div class="product-details">
+          <h2>Nike Air Jorden 142 (Special Edition)</h2>
+          <p>A line of basketball shoes produced by Nike!</p>
+          <p class="price">₹45,000</p>
+          <button class="buy-now" onclick="alert('Added to cart!')">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links and CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <a
+          href="#learn-more"
+          class="cta-link"
+          onclick="alert('Get to Know More About Us. Should we move forward?')"
+          >Learn More</a
+        >
+        <a href="#contact" class="cta-link">Contact Us</a>
+        <div class="social-media">
+          <a
+            href="#"
+            class="social-icon"
+            onclick="alert('Taking you to Facebook page')"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            class="social-icon"
+            onclick="alert('Taking you to Instagram page')"
+            >Instagram</a
+          >
+          <a
+            href="#"
+            class="social-icon"
+            onclick="alert('Taking you to Twitter Handle')"
+            >Twitter</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional Customer Reviews Section -->
+    <section class="reviews">
+      <div class="container">
+        <h3>Customer Reviews</h3>
+        <p>⭐️⭐️⭐️⭐️⭐️ "This product changed my life!" - Happy Customer</p>
+        <p>
+          ⭐️⭐️⭐️⭐️ "Very satisfied with my purchase." - Satisfied Customer
+        </p>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+      <div class="container">
+        <h3>Stay Updated</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button
+            type="submit"
+            onclick="alert('Successfully updated your actions..')"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
